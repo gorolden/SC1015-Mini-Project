@@ -51,4 +51,6 @@ Test data:
 
 Analysis. At a low depth of 4, it is clear that our model is ineffective because the  acccuracies are about 0.50 for both train and test data. This means half the time it is making the wrong prediction. Furthermore, despite the ratio of actual wins to losses to be about 50:50, this model is predicting a huge majority of games to be 'Loss' compared to 'Win'.
 
-The following attempts at this model were by increasing depths.
+- The following attempt at this model was to increase depth. It resulted in a better outcome. Accuracies went up, and the confusion matrices came out less skewed. It can be improved however.
+- Attempt 3 went about by reducing the sample size during to the long compilation procedure. 2 of the 6 predictors were also removed. Any fluctuations that these variables created were therefore, eliminated. Model performed better on train, but worse on test datas. Overfitting (overcomplicating) was still an issue.
+- Attempt 4: RandomForestClassifier 
