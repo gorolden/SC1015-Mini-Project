@@ -59,4 +59,25 @@ Analysis. At a low depth of 4, it is clear that our model is ineffective because
 - > Exp 3: @n=100, & depth=16, model accuracies improved, but overfitting happens
 - > Exp 4: @n=1000, & depth=16, model performed the best, conclude that increasing both parameters obtains better model
 - Attempt 5: GridSearchCV using to cross validate for optimum values at 'n' and 'depth'. Testing done at intervals.
+- > Run 1: Accuracy. Parameter values checked by incrementing at regular intervals. 
+- > Run 2: F1. Same process conducted.
 
+Analysis:
+- The GridSearchCV gave good accuracies. Run 1 resulted in an optimal depth value of 12, Run 2 resulted in depth value of 16. The ideal value may lie in between, but hardware constraints make it difficult to test for every circumstance. Accuracies for test/train data in this new method were close, which is quite optimal.
+
+Conclusion:
+- The data set is very large to work with. Therefore, we have utilised random classifying, grid searching, etc. to find some kind of a model. Determining the perfect model with no over/underfitting is impossible. Grid searching could be left running for a longer period, but this is not practical. 
+
+Contributions:
+- Ethan
+- > Presentation slides, datasets, initial/fundamental data analysis, primary EDA, machine learning techniques, outcomes and experiments
+- Ivan
+- > Slide sorting, layouts, initial presentation of findings, secondary data analysis, secondary EDA, supplemental information, overall descriptions of works conducted
+
+References:
+- Jupyter Notebook/Anaconda
+- Slidesgo
+- Random Tree Classifiers
+- > https://www.analyticsvidhya.com/blog/2020/05/decision-tree-vs-random-forest-algorithm/
+- GridSearchCV
+- > https://www.mygreatlearning.com/blog/gridsearchcv/
