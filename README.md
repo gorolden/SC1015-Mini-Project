@@ -23,3 +23,32 @@ In the 1st stage of the cleaning process, the duration variable was identified a
 A 2nd dataset was imported, containing individual player information - such as ELO, color, civilisation, etc. This was merged with the initial dataset based on token column. Further outliers such as NULL spaces in this new dataframe was also removed.
 
 Analysis of the data was conducted using multiple bar plots and graphs. We moved on to machine learning process, starting with the classification tree.
+
+
+
+This was used because our response variable is winner, which is of type bool. 6 predictors were listed as factors that may influence this response.
+- color
+- civ
+- rating
+- ladder
+- map
+- duration_seconds
+
+A decisionTreeClassifier was used for these variables. Respective confusion matrices and accuracies were determined using them.
+Train data:
+- accuracy: 0.5
+- TPR: 0.12
+- TNR: 0.89
+- FPR: 0.10
+- FNR: 0.87
+
+Test data:
+- accuracy: 0.5
+- TPR: 0.12
+- TNR: 0.89
+- FPR: 0.1
+- FNR: 0.87
+
+Analysis. At a low depth of 4, it is clear that our model is ineffective because the  acccuracies are about 0.50 for both train and test data. This means half the time it is making the wrong prediction. Furthermore, despite the ratio of actual wins to losses to be about 50:50, this model is predicting a huge majority of games to be 'Loss' compared to 'Win'.
+
+The following attempts at this model were by increasing depths.
