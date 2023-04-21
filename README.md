@@ -53,4 +53,10 @@ Analysis. At a low depth of 4, it is clear that our model is ineffective because
 
 - The following attempt at this model was to increase depth. It resulted in a better outcome. Accuracies went up, and the confusion matrices came out less skewed. It can be improved however.
 - Attempt 3 went about by reducing the sample size during to the long compilation procedure. 2 of the 6 predictors were also removed. Any fluctuations that these variables created were therefore, eliminated. Model performed better on train, but worse on test datas. Overfitting (overcomplicating) was still an issue.
-- Attempt 4: RandomForestClassifier 
+- Attempt 4: RandomForestClassifier was used now. This could change the model since it uses multiple trees. 
+- > Exp 1: @n=100, & depth=4, model became underfitted
+- > Exp 2: @n=1000, & depth=4, model performed better on test - but underfitted
+- > Exp 3: @n=100, & depth=16, model accuracies improved, but overfitting happens
+- > Exp 4: @n=1000, & depth=16, model performed the best, conclude that increasing both parameters obtains better model
+- Attempt 5: GridSearchCV using to cross validate for optimum values at 'n' and 'depth'. Testing done at intervals.
+
